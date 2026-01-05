@@ -2,34 +2,28 @@
 title: "Week 3 \u2013 Messy Data, Statistical Testing"
 weekNumber: 3
 days:
-- date: '2025-04-15'
+- date: '2026-01-19'
+  events:
+  - name: LAB 2
+    type: lab
+    title: DataFrames and Grouping
+    reading: ''
+- date: '2026-01-20'
   events:
   - name: LEC 5
     type: lecture
     title: Exploring and Cleaning Data
-    # blank: resources/lectures/lec05/lec05-live.html
-    filled: resources/lectures/lec05/lec05.html
     reading: '[Ch. 9](https://learningds.org/ch/09/wrangling_intro.html) and [10](https://learningds.org/ch/10/eda_intro.html)'
-- date: '2025-04-16'
-  events:
-  - name: LAB 2
-    type: lab
-    # url: https://github.com/dsc-courses/dsc80-2025-wi/tree/main/labs/lab02
-    title: More Pandas
-    reading: ''
-- date: '2025-04-17'
+- date: '2026-01-22'
   events:
   - name: LEC 6
     type: lecture
     title: Hypothesis and Permutation Testing
-    # blank: resources/lectures/lec06/lec06-live.html
-    filled: resources/lectures/lec06/lec06.html
     reading: '[Ch. 17](https://learningds.org/ch/17/inf_pred_gen_intro.html)'
-- date: '2025-04-18'
+- date: '2026-01-23'
   events:
   - name: PROJ 1
     type: proj
     title: Project 1
-    # url: https://github.com/dsc-courses/dsc80-2025-wi/tree/main/projects/project01
     reading: ''
 ---

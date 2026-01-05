@@ -2,27 +2,25 @@
 title: "Week 8 \u2013 Feature Engineering"
 weekNumber: 8
 days:
-- date: '2025-05-20'
-  events:
-  - name: LEC 13
-    type: lecture
-    title: Feature Engineering
-    filled: resources/lectures/lec13/lec13.html
-    reading: '[Ch. 15.0-15.6](https://learningds.org/ch/15/linear_intro.html)'
-- date: '2025-05-21'
+- date: '2026-02-23'
   events:
   - name: LAB 7
     type: lab
-    title: Regular Expressions and Text Data
-    reading: ''
-- date: '2025-05-22'
+    title: Regular Expressions
+    reading: '[Ch. 13](https://learningds.org/ch/13/text_intro.html)'
+- date: '2026-02-24'
   events:
   - name: LEC 14
     type: lecture
     title: Feature Engineering
-    filled: resources/lectures/lec14/lec14.html
     reading: '[Ch. 15.7-15.9](https://learningds.org/ch/15/linear_feature_eng.html)'
-- date: '2025-05-23'
+- date: '2026-02-26'
+  events:
+  - name: LEC 15
+    type: lecture
+    title: Standardization, Multicollinearity, and Generalization
+    reading: '[Ch. 16](https://learningds.org/ch/16/ms_train_test.html), [17.6](https://learningds.org/ch/17/inf_pred_gen_prob.html)'
+- date: '2026-02-27'
   events:
   - name: FINAL PROJ
     type: proj

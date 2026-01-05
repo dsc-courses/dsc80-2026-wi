@@ -1,35 +1,29 @@
 ---
-title: "Week 2 \u2013 Dataframes"
+title: "Week 2 \u2013 DataFrames"
 weekNumber: 2
 days:
-- date: '2025-04-08'
-  events:
-  - name: LEC 3
-    type: lecture
-    title: Aggregating
-    # blank: resources/lectures/lec03/lec03-live.html
-    filled: resources/lectures/lec03/lec03.html
-    reading: '[Ch. 6.2](https://learningds.org/ch/06/pandas_aggregating.html)'
-- date: '2025-04-09'
+- date: '2026-01-12'
   events:
   - name: LAB 1
     type: lab
     title: Python, NumPy, and Pandas
-    url: https://github.com/dsc-courses/dsc80-2025-sp/tree/main/labs/lab01
     reading: ''
-- date: '2025-04-10'
+- date: '2026-01-13'
+  events:
+  - name: LEC 3
+    type: lecture
+    title: Aggregating
+    reading: '[Ch. 6.2](https://learningds.org/ch/06/pandas_aggregating.html)'
+- date: '2026-01-15'
   events:
   - name: LEC 4
     type: lecture
     title: Simpson's Paradox, Joining, Transforming
-    # blank: resources/lectures/lec04/lec04-live.html
-    filled: resources/lectures/lec04/lec04.html
     reading: '[Ch. 6.3-6.5](https://learningds.org/ch/06/pandas_joining.html)'
-- date: '2025-04-11'
+- date: '2026-01-16'
   events:
   - name: PROJ 1
     type: proj
     title: Project 1 checkpoint
-    # url: https://github.com/dsc-courses/dsc80-2025-sp/tree/main/projects/project01
     reading: ''
 ---

@@ -1,11 +1,17 @@
 ---
-title: "Week 11 \u2013 Final Exam"
+title: "Week 11 \u2013 Final Exam "
 weekNumber: 11
 days:
-- date: '2025-06-10'
+- date: '2026-03-14'
   events:
   - name: EXAM
     type: exam
-    title: Final Exam 8:00-10:59AM at CENTR 113
+    title: Final Exam
+    reading: ''
+- date: '2026-03-17'
+  events:
+  - name: FINAL PROJ
+    type: proj
+    title: Final Project
     reading: ''
 ---
