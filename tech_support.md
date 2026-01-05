@@ -74,7 +74,7 @@ The way to do this depends on whether you're on a Unix-like platform (macOS or L
 
 1. Download the Windows install script from [here](https://github.com/conda-forge/miniforge?tab=readme-ov-file#windows). The file should be named `Miniforge3-Windows-x86_64.exe` or similar.
 2. Run the downloaded `.exe` file. Follow the prompts, taking note of the options to "Create start menu shortcut" and "Add Miniforge3 to my PATH environment variable". The latter is not selected by default due to potential conflicts with other software, but you will want to select it. This allows you to easily run `mamba` commands from from terminals other than the just-installed Miniforge Prompt.
-3. From the Start Menu, open the Miniforge Prompt and run the following command:
+3. From the Start Menu, open the Miniforge Prompt and run:
     ```
     conda init
     ```
@@ -90,10 +90,10 @@ Yes, we said `conda` environment, even though we're using `mamba` to create it.
 To create the environment, in your terminal, run:
 
 ```
-mamba env create -f path_to_file
+mamba env create -f <path_to_file>
 ```
 
-Here, `path_to_file` should be replaced with a path to the `environment.yml` file you just downloaded, which might be in your Downloads or Desktop folder. For example: `mamba env create -f /Users/yourusername/Desktop/environment.yml`. If you get an error saying `environment.yml` does not exist, you probably have the wrong path to the file.
+Here, `<path_to_file>` should be replaced with a path to the `environment.yml` file you just downloaded, which might be in your Downloads or Desktop folder. For example: `mamba env create -f /Users/yourusername/Desktop/environment.yml`. If you get an error saying `environment.yml` does not exist, you probably have the wrong path to the file.
 
 ### Step 4: Activate the environment
 
@@ -103,9 +103,9 @@ To do so, run:
 mamba activate dsc80
 ```
 
-_Where did the name `dsc80` come from, you might ask? We defined it for you at the top of `environment.yml` with `name: dsc80`._
-
 If you get an error saying `mamba` isn't defined, try closing and reopening your terminal first and then rerunning the command.
+
+Where did the name `dsc80` come from, you might ask? We defined it for you at the top of `environment.yml` with `name: dsc80`.
 
 ---
 
@@ -128,7 +128,7 @@ To open a Jupyter Notebook, use the `jupyter notebook` command in your terminal.
 ### Using Git
 
 All of our course materials, including your assignments, are hosted on
-GitHub in [this Git repository](https://github.com/dsc-courses/dsc80-2025-sp). This means that you'll need to download and use
+GitHub in [this Git repository](https://github.com/dsc-courses/dsc80-2026-wi). This means that you'll need to download and use
 [Git](https://git-scm.com/) in order to work with the course
 materials.
 
@@ -139,13 +139,13 @@ previous version of your project, or even work on two different versions
 in the future. We\'ll stick to using the basic features of Git in DSC
 80.
 
-There are Git GUIs, and you can use them for this class. You can also
+There are many graphical user interfaces (GUIs) for working with Git, which you are welcome to use for this class. Janine uses GitHub Desktop. You can also
 use the command-line version of Git. To get started, you\'ll need to
-\"clone\" the course repository. The command to do this is:
+\"clone\" the course repository. Navigate to the directory where you want to place your DSC 80 course materials, and run:
 
-    git clone https://github.com/dsc-courses/dsc80-2025-sp
+    git clone https://github.com/dsc-courses/dsc80-2026-wi
 
-This will copy the repository to a directory on your computer. You should only need to do this once.
+This will copy the repository to the current directory on your computer. You should only need to do this once.
 
 Moving forward, to bring in the latest version of the repository, in your local repository, run:
 
@@ -158,13 +158,15 @@ to lose work (although it\'s still possible!).
 
 **Merge Conflicts**
 
-You might face issues when using `git pull` regarding merge issues and branches. This is caused by files being updated on your side while we are also changing the [Git repository](https://github.com/dsc-courses/dsc80-2025-sp) by pushing new assignments on our side. Here are some steps you can follow to resolve them:
+You might face issues when using `git pull` regarding merge issues and branches. This is caused by files being updated on your side while we are also changing the [Git repository](https://github.com/dsc-courses/dsc80-2026-wi) by pushing new assignments on our side. Here are some steps you can follow to resolve them:
 
-NOTE: Whenever working with GitHub pulls, merges, etc., it's a good idea to save your important work locally so that if you accidentally overwrite your files you still have the work saved. **Save your work locally before following the steps below.**
+NOTE: If you're new to working with GitHub pulls, merges, etc., it's a good idea to **save a copy of your important work locally** just in case you accidentally overwrite your files. 
+
+Here are some useful `git` commands to know:
 
 1. `git status` shows the current state of your Git working directory and staging area. It's a good sanity check to start with. You will probably see your project and lab files that you have worked on.
 2. `git add .`  will add all your files to be ready to commit.
-3. `git commit -m "some message of your choice"`  will commit the files, with some description in the quotations. This can be whatever you want, it won't matter.
+3. `git commit -m "some message of your choice"`  will commit the files, with some description in the quotations, such as `"progress on questions 1-3 on lab 1". This message can be whatever you want. 
 
 At this stage, if you `git pull`, it should work. You should double-check that you have new files, as well as that your old files are unchanged. If they are changed then you should be able to just copy-paste from your local backup. If this does **not** work then you may have **merge conflicts**, follow the next steps:
 
@@ -221,96 +223,3 @@ Many students like to use VSCode to edit Jupyter Notebooks. If that's you, then 
     <center><img src="../assets/images/ts-python-environments.png" width=300></center>
 1. Finally, click "dsc80 (Python 3.12.6)".
     <center><img src="../assets/images/ts-dsc80-conda.png" width=500></center>
-
-<!-- ## Working Remotely via DataHub
-
-Working *remotely* means using an environment that someone else set up
-for you on a computer far, far away, usually through the browser. This
-is the way you wrote code in DSC 10, for instance. There\'s nothing
-wrong with this, *per se*, and it is simpler, but you should think of
-this option as developing with \"training wheels\". Eventually, you will
-need to learn how to set up your own Python environment, and now is as
-good a time as any.
-
-There are servers available to use at
-[datahub.ucsd.edu](datahub.ucsd.edu). These are a lot like the
-DataHub servers that you used in DSC 10, however they are customized
-for this course. After logging in with your UCSD account, you will be
-taken the familiar juptyer landing page. The server you are logged into
-has \~4GB of RAM available, and has Python with all the necessary
-packages.
-
-### ⚠️ Warning!
-
-DataHub outages are not uncommon, and they can be expected to occur once
-or twice per quarter (sometimes more). Outages typically last for a few
-hours or less, but they can prevent you from working on your assignment.
-
-Since we do not manage DataHub, we cannot make any guarantees about its
-availability. DataHub crashes that prevent you from turning in or
-working on your assignment near the deadline are typically handled via
-the usual [slip day](../syllabus) mechanism. If DataHub
-has been down for a long time (more than 24 hours), let us know and
-we\'ll consider a blanket extension -- though this has very rarely
-(never?) happened.
-
-Our advice is to use a local development environment, or to at least
-have one as available as a backup option. If you decide to use DataHub
-as your first choice, you should keep an extra slip day or two in
-reserve in case the server crashes.
-
-### Installing or Updating Python Packages
-
-To update a package (e.g. `pandas`) on DataHub, you\'ll need to use the
-command line. To do this, open "New \> Terminal" and type:
-
-`mamba install --user --upgrade pandas`
-
-followed by the enter key to run the command.
-
-One package that you\'ll likely need to install is `otter-grader`. This
-package provides the autograder that checks your answers in the labs and
-projects.
-
-### JupyterLab
-
-The remote servers have a development environment installed on them,
-however, it's non-intuitive how to access it. Once on the landing page,
-the url should read something like:
-
-`https://datahub.ucsd.edu/user/USER/tree`
-
-You can access the IDE (integrated development environment) by changing
-\"tree\" to \"lab\". This brings up JupyterLab. The url should look
-something like this:
-
-`https://datahub.ucsd.edu/user/USER/lab`
-
-For more information on this IDE, you can see read about it here. From
-within JupyterLab, you can:
-
--   Use a Python console
--   Run Jupyter notebooks
--   Use a terminal (e.g. to pull git repos)
--   Develop Python code in .py files
-
-### Git
-
-Whether you work locally or use DataHub, you'll need to pull assignments from GitHub. If you work on DataHub, you'll **have** to pull from GitHub using the command-line. To do this, open "New \> Terminal" and, to get the course repository for the first time, type:
-
-    git clone https://github.com/dsc-courses/dsc80-2023-fa
-
-Then, open up the file-tree in the original Jupyter tab, and you should see all the
-course files now there. If you have already cloned the repository, and
-just want to get the latest files, type `git pull` and you should see
-the updated files.
-
-### Troubleshooting DataHub
-
-**What if I accidentally clicked a different class instead of DSC 80 when logging into DataHub, or what if my DataHub doesn't load?**
-
-1. If you are already logged into DataHub, click "Control Panel" in the top right. (If your DataHub never launched in the first place, proceed to the next step.)
-
-2. In the toolbar at appears at [datahub.ucsd.edu](https://datahub.ucsd.edu), click "Services" then click "manual-resetter", then click "Reset". If a pop-up box appears, that's okay.
-
-3. Log back into DataHub again and it should allow you to select a course – select DSC 80. -->
