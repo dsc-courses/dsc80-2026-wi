@@ -62,9 +62,7 @@ The way to do this depends on whether you're on a Unix-like platform (macOS or L
     curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
     ```
 
-    This will place a file named something like `Miniforge3-Darwin-arm64.sh` wherever you ran the command. 
-
-If you get an error saying `command not found: curl`, replace `curl -L -O` with `wget` and re-run the same command.
+    This will place a file named something like `Miniforge3-Darwin-arm64.sh` wherever you ran the command. If you get an error saying `command not found: curl`, replace `curl -L -O` with `wget` and re-run the same command.
 
 2. Run the installer. To do this, immediately after the last command, run:
 
@@ -74,7 +72,7 @@ If you get an error saying `command not found: curl`, replace `curl -L -O` with 
 
 **Windows**:
 
-1. Download the Windows install script from [here](https://github.com/conda-forge/miniforge?tab=readme-ov-file#windows). The file should be named `Miniforge3-Windows-x86_64.exe` or similar.
+1. Download the Windows install script from [here](https://github.com/conda-forge/miniforge?tab=readme-ov-file#windows). The file should be named `Miniforge3-Windows-x86_64.exe`.
 2. Run the downloaded `.exe` file. Follow the prompts, taking note of the options to "Create start menu shortcut" and "Add Miniforge3 to my PATH environment variable". The latter is not selected by default, but you will want to select it. This allows you to easily run `mamba` commands from from terminals other than the just-installed Miniforge Prompt.
 3. From the Start Menu, open the Miniforge Prompt and run:
     ```
@@ -224,8 +222,6 @@ Many students like to use VSCode to edit Jupyter Notebooks. If that's you, then 
 
 1. Open a Juypter Notebook in VSCode.
 1. Click "Select Kernel" in the top right corner of the window.
-    <center><img src="../assets/images/ts-select-kernel.png" width=150></center>
 1. Click "Python Environments" in the toolbar that appears in the middle.
-    <center><img src="../assets/images/ts-python-environments.png" width=300></center>
-1. Finally, click "dsc80 (Python 3.12.6)".
-    <center><img src="../assets/images/ts-dsc80-conda.png" width=500></center>
+1. Select "dsc80 (Python 3.12.12)".
+    <center><img src="../assets/images/ts-dsc80-conda.jpg" width=500></center>
