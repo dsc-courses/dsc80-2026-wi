@@ -1,6 +1,6 @@
 ---
 name: Noah Golder
-role: tutor
+role: Tutor
 pronouns: he/him
 photo: assets/staff-images/golder-noah.png
 description: 3rd year, Data Science, Revelle
