@@ -1,4 +1,4 @@
-<div class="staffer">
+<!-- <div class="staffer">
   {% if page.photo %}
   <img class="staffer-image" src="{{ page.photo | relative_url }}" alt="{{ page.name }}">
   {% endif %}
@@ -30,7 +30,7 @@
 
     {{ content }}
   </div>
-</div>
+</div> -->
 
 
 <div class="staffer">
@@ -42,6 +42,8 @@
       {% if page.role %}
       {% if page.role == 'TA' %}
       <span class="badge-ta">{{ page.role }}</span><br>
+      {% elsif page.role == 'Graduate Reader' %}
+      <span class="badge-graduate-reader">{{ page.role }}</span><br>
       {% elsif page.role == 'Tutor' %}
       <span class="badge-tutor">{{ page.role }}</span><br>
       {% elsif page.role == 'Mascot' %}
