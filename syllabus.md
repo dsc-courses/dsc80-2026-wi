@@ -299,11 +299,7 @@ Slip days are designed to be a transparent and predictable source of leniency
 in deadlines. You can use a slip day if you are too busy to complete an
 assignment on its original due date (or if you forgot about it). But slip days
 are also meant for things like the internet going down at 11:58PM just as you
-go to submit your assignment. Slip days are meant to be used in exceptional
-circumstances, so **you probably should not need to use all 5, but if you have
-something going on in your life that is impeding your ability to do your
-classwork on time, please reach out to us as soon as possible so we can work
-something out**.
+go to submit your assignment. Slip days are meant to cover "normal" life circumstances, but if you have a serious illness, suffer a loss, or experience some other unfortunate event that severely disrupts your ability to participate in the class, please let us know ASAP! 
 
 **Slip days are applied automatically at the end of the quarter, and you don’t
 need to ask in order to use one.** It’s your responsibility to keep track of
@@ -554,8 +550,7 @@ respected and feels comfortable.
 
 ### Campus Resources
 
-If there is an issue you feel uncomfortable speaking with us or are searching
-for help on a specific concern, there are several campus resources available to
+There are several campus resources available to
 you, including:
 
 - [UCSD Counseling and Psychological Services (CAPS)](https://caps.ucsd.edu/)
@@ -563,6 +558,14 @@ you, including:
 - [Office for Students with Disability (OSD)](https://osd.ucsd.edu/)
 - [Office for Prevention of Sexual Harassment and
   Discrimination](https://blink.ucsd.edu/HR/policies/sexual/OPHD.html)
+
+More generally, if you have any concerns about your ability to focus or succeed in this course, or just need someone to talk to, please contact us ASAP and we'll figure something out.
+
+### Waitlist
+
+If you're on the waitlist, make sure you participate in the class just as if you were enrolled so that if you do get in, you're not behind. Submit all assignments on time, as you won't be allowed to go back and do past-due assignments for credit if you join late.
+
+Often, people will ask about their chances of making it off the waitlist. Unfortunately, that can be hard to answer! In some quarters, the waitlist moves a lot; in others, not at all.
 
 
 ## Acknowledgements 🙏
