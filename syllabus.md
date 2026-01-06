@@ -235,7 +235,7 @@ schedule (which is subject to change in any given week):
 | ------ | ------ | ------- | --------- | -------- | ---------- | -------- |
 |        |        | Lecture |           | Lecture  |            |          |
 |        |        |         |   Discussion        |          |  |          |
-| | <span style='color:red'><b>Lab due</b></span> | | | | <span style='color:red'><b>Project/checkpoint due</b></span><br><span style='color:red'><b>Lab reflection due (extra credit)</b></span> | |
+| | <span style='color:red'><b>Lab due</b></span> | | | | <span style='color:red'><b>Project/checkpoint due</b></span> | |
 
 ---
 
@@ -244,13 +244,15 @@ schedule (which is subject to change in any given week):
 This class has one Midterm Exam and one Final Exam. Exams are cumulative,
 though the Final Exam will emphasize material after the Midterm Exam.
 
-- **Final Exam:** June 10, 2025, 8-11AM,  CENTR 113.
+- **Midterm Exam**: Tuesday, February 10th (Week 6) during lecture
 
-- **Midterm Exam**: Week 6 Tuesday (during lecture)
+- **Final Exam:** Saturday, March 14th, 8-11AM
 
-Both exams will be administered in-person. If you have conflicts with either of the exams, please let us know on the [Exam Accommodations Form](https://forms.gle/UiGJ2aDsGViVbYPB9).
+**Both exams will be administered in-person**. If you have conflicts with
+either of the exams, please let us know on the [Welcome
+Survey](https://docs.google.com/forms/d/e/1FAIpQLScGBRJrHxMPa8ix46FFDPxn9UhQoVhWOKMQ41ZTypWoj_OEAA/viewform?usp=sf_link).
 
-### Redemption Policy
+### Exam Redemption
 
 The Final Exam will consist of two parts: a “Midterm” section and a
 “post-Midterm” section. If you do better on the “Midterm” section of the Final
@@ -276,62 +278,48 @@ Here is how we'll compute your grade:
 | ------------------- | ------ | -------------------------------------------------------------------------- |
 | Labs                | 20%    | 2.5% per lab, lowest dropped                                               |
 | Projects            | 25%    | 5% each for Projects 1-3, 10% for Project 4                                |
-| Project Checkpoints | 5%     | 1% each                                                                    |
+| Project Checkpoints | 5%     | 1% each                                                                     |
 | Midterm Exam        | 20%    | see the Redemption Policy above                                            |
-| Final Exam          | 30%    |                                                                            |
-| Lecture Attendance  | 0%     | If opted in, counts as 5% and reduces Midterm and Final Exam by 2.5% each. |
+| Final Exam          | 30%    |                                                                          
 
-### Late Policy
+### Late Policy, Slip Days, and Drops
 
 All assignments must be submitted by 11:59PM San Diego time on the due date to
 be considered on time. You may turn them in as many times as you like before the
 deadline and only the most recent submission will count, so it’s a good habit
-to submit early and often.
+to submit early and often. If you make a submission after the
+deadline, your assignment will be counted as late.
 
-**New**{: .label .label-green } We recognize that life is unpredictable, and
-that there are circumstances and emergencies that cannot be resolved
-immediately. To account for this, you may request an extension for labs and
-projects by filling out the [Extension Request Form][extension-request-form].
-Filling out this form will grant you a 2-day deadline extension for an
-assignment with no grade penalty. (We would like this process to be automatic,
-but for now it requires a staff member to manually update your due date on
-Gradescope.) We are using this policy instead of slip days this quarter to help
-identify and support students who may be encountering difficult circumstances,
-so if we notice that you have used the form many times during the quarter,
-course staff will schedule a meeting with you to come up with a plan for
-completing the rest of the course before approving further extension requests.
+You have **5 "slip days"** to use throughout the quarter on **projects or project checkpoints**. A slip day extends
+the deadline of an assignment by 24 hours. You may use up to 2 slip days for a single deadline, meaning no assignments will be accepted more than 48 hours after the deadline. 
 
-**If you submit an assignment late and didn't fill out the Extension Request
-Form before the assignment deadline, the submission will not be accepted and you
-will receive a 0.**
+You may not use slip days on lab assignments. If you miss a deadline for a lab, you can use the resubmission policy to get 50% credit on the lab. We also drop your lowest lab score.
 
-Note that we will not grant deadline extensions for Project Checkpoint deadlines
-and the Final Project deadline.
+Slip days are designed to be a transparent and predictable source of leniency
+in deadlines. You can use a slip day if you are too busy to complete an
+assignment on its original due date (or if you forgot about it). But slip days
+are also meant for things like the internet going down at 11:58PM just as you
+go to submit your assignment. Slip days are meant to be used in exceptional
+circumstances, so **you probably should not need to use all 5, but if you have
+something going on in your life that is impeding your ability to do your
+classwork on time, please reach out to us as soon as possible so we can work
+something out**.
 
-### Redemption Policy for Labs and Projects
-
-**New**{: .label .label-green } Labs 1-9 and Projects 1-3 have a redemption
-policy to make up for lost points on your original submission. After the
-original deadline passes for an assignment, we will publish the autograder
-result for your latest submission before the assignment deadline. You may then
-submit the assignment within a week of the original assignment deadline to
-redeem up to 80% of the points you lost on the original submission.
-
-Example: Suppose that after grades were released for the Project 1 deadline, Sam
-receives a 90% since he lost points on a few hidden tests. He fixes the bugs,
-resubmits, and his new submission gets a 100%. His final grade for Project 1
-would then be 98% (0.8 \* (100% - 90%) + 90% = 98%).
-
-Note that this redemption policy does not apply to project checkpoints, or the
-Final Project.
+**Slip days are applied automatically at the end of the quarter, and you don’t
+need to ask in order to use one.** It’s your responsibility to keep track of
+how many you have left. If you’ve run out of slip days and submit an assignment
+late, that assignment may still be graded, but you will receive a 0 on it when
+we calculate grades at the end of the quarter. However, in the event that you
+use all 5 days and submit another assignment late, we will allocate your slip
+days to your projects in **reverse-chronological order**. This is done to prevent you from receiving a 0 on the Final Project if you've run out of slip days and submit it late.
 
 ### Regrade Requests
 
 Most of the labs and projects are autograded, but some questions are manually
 graded. If you feel that there in an error in the autograder or that the manual
-grader has made a mistake, you may submit a regrade request within **two
+grader has made a mistake, you may submit a regrade request within **three
 days** of the grades being released. If you do not submit a regrade request
-within two days, your original grade will be final.
+within this timeframe, your original grade will be final.
 
 **Regrade Requests for Manually Graded Problems**
 
@@ -341,6 +329,8 @@ your answer was mostly right but unclear you may still not be eligible for full
 credit.
 
 **Regrade Requests for Autograded Problems**
+
+To submit an autograder regrade request, please make a private post to all instructors on Campuswire explaining the issue, including screenshots where appropriate.
 
 The autograder is very picky: it expects your assignments to have exactly the
 correct file names, all functions must be named correctly, etc. If these are
@@ -353,6 +343,16 @@ properly. Also, be sure to submit your assignment (or at least part of it) to
 Gradescope with enough time before the deadline to get help if there is a
 strange autograder problem.
 
+In the case that you submit code that doesn't run and discover this at a later
+date, you have some options:
+
+1.  For a project or project checkpoint, if it is still before the slip day deadline, you may use slip days to fix your code and resubmit. Note that you're free to do this even if your code runs – this is just making use of the normal slip day mechanism to submit an assignment late. Likewise, for a lab, if it is before the resubmission deadline, you can resubmit the lab as usual, and you'll get half credit because you'll have a 0 on the original submission.
+2.  If it is past the slip day deadline **and** your code requires only minor fixes
+    (e.g., the file name is wrong) we will fix your code at the cost of **2**
+    slip days. Note that these slip days are in addition to any slip days you
+    already used on the assignment. You can submit a catastrophe regrade
+    request the same way you submit a regular autograder regrade request, via a private post on Campuswire.
+
 ### Incompletes
 
 In the unfortunate circumstance that you become sick, suffer a loss, or
@@ -364,28 +364,16 @@ the best course of action. Note that an Incomplete does not allow you to re-do
 work that has already been completed, only to do work that hasn’t been
 completed, so it’s best to reach out right away.
 
-### A note on letter grades
+### Letter Grades 
 
-_The following is adapted from [CSE
-160](https://courses.cs.washington.edu/courses/cse160/20au/syllabus/index.html#curve)
-at the University of Washington._
+We will use a standard scale for assigning letter grades:
 
-Grading for this class is not curved in the sense that the average is set at
-(say) a B+ and half of the class must receive a grade lower than that. If
-everyone does well and shows mastery of the material, everyone can receive an A
-(this would be awesome!). If no one does well (this is unlikely), then everyone
-can receive a C.
+| **Letter Grade** | A | A- | B+ | B | B- | C+ | C | C- | D | F |
+| **Percentage** | 93+ | 90+ | 87+ | 83+ | 80+ | 77+ | 73+ | 70+ | 60+ | below 60 |
 
-Grading for this class is curved in the sense that we do not have a pre-defined
-mapping from project and exam scores to a final GPA. There is no pre-determined
-score (e.g., 90% of all possible points) that earns an A or a B or a C or any
-other grade. To determine the final grade, we will ask questions like “Did this
-student master the material?”. With that said, grades will not be any stricter
-than the standard grading scale (where an A+ is a 97+, A is 93+, A- is 90+,
-etc). For instance, the threshold for an “A” will never be higher than 93%.
 
-Try your best not to worry about grades, and we’ll reciprocate by being fair.
-We’re in this together 😎.
+We may slightly lower these cutoffs, making it easier to earn a certain grade, but we will never raise the cutoffs. A+ grades are given at the instructor's discretion. If you are taking the course P/NP, you will receive a grade of P if you meet the criteria for a C-
+grade, otherwise you will receive a grade of NP.
 
 ---
 
@@ -432,8 +420,7 @@ of projects, together with your partner).
 The following activities are considered cheating and are not allowed in DSC 80
 (not an exhaustive list):
 
-- Using or submitting code acquired from other students (except from your pair
-  programming partner during projects), the web, or any other resource not
+- Using or submitting code acquired from other students (except from your partner during projects), the web, or any other resource not
   officially sanctioned by this course
 - Posting your code online, including on Campuswire, unless privately to instructors
   only
@@ -441,7 +428,7 @@ The following activities are considered cheating and are not allowed in DSC 80
 - Completing an assignment on behalf of someone else
 - Providing code, exam questions, or solutions to any other student in the
   course
-- Splitting up project questions with your pair programming partner and each
+- Splitting up project questions with your partner and each
   working on different questions
 - Collaborating with others on exams
 
@@ -527,9 +514,7 @@ If you do use GenAI to assist you on assignments, keep these guidelines in mind:
   course is meant to teach you. Be careful!
 
 If your assignment submission includes any content generated by an AI tool, it
-should be cited to acknowledge the source of the material. In each assignment,
-you will be provided with a space to explain and reflect on your use of GenAI
-tool(s).
+should be cited to acknowledge the source of the material. You can include citations as comments in your code.
 
 ---
 
@@ -574,19 +559,14 @@ for help on a specific concern, there are several campus resources available to
 you, including:
 
 - [UCSD Counseling and Psychological Services (CAPS)](https://caps.ucsd.edu/)
+- [Hub Basic Needs Center](https://thehub.ucsd.edu/)
 - [Office for Students with Disability (OSD)](https://osd.ucsd.edu/)
 - [Office for Prevention of Sexual Harrassment and
   Discrimination](https://blink.ucsd.edu/HR/policies/sexual/OPHD.html)
 
-#### Food Support for Students:  
-
-If you are skipping and stretching meals, or having difficulties affording or accessing food, you may be eligible for CalFresh, California’s Supplemental Nutrition Assistance Program, that can provide up to $292 a month in free money on a debit card to buy food. Students can apply at: https://benefitscal.com/r/ucsandiegocalfresh. 
-
-Also, The Hub Basic Needs Center at UCSD exists to empower all students by connecting them to resources for food, stable housing and financial literacy.  Visit their site at https://basicneeds.ucsd.edu.
 
 ## Acknowledgements 🙏
 
-This offering of DSC 80 builds off of prior offerings by Sam Lau, Tauhidur
-Rahman, Suraj Rampure, Justin Eldridge, Marina Langlois, and Aaron Fraenkel.
+This offering of DSC 80 builds off of prior offerings by Aaron Fraenkel, Sam Lau, Suraj Rampure, Justin Eldridge, Marina Langlois, Tauhidur Rahman, and Duncan Watson-Parris.
 Along with the help of their tutors and TAs, they developed much of the content
 that we will use in this course.
