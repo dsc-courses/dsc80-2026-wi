@@ -19,11 +19,11 @@ nav_order: 2
 
 <!-- prettier-ignore-end -->
 
-[piazza]: https://piazza.com/class/m8qkpqxd1s316c
-[gradescope]: https://www.gradescope.com/courses/1011519
-[github]: https://github.com/dsc-courses/dsc80-2025-sp
-[welcome-survey]: https://forms.gle/HW8AB9xtWzsWuuDf7
-[extension-request-form]: https://forms.gle/9KSR8cVXjxHuEs2z6
+[campuswire]: https://campuswire.com/p/GFDCC5DB7
+[gradescope]: https://www.gradescope.com/courses/1209672
+[github]: https://github.com/dsc-courses/dsc80-2026-wi
+[welcome-survey]: google.com
+
 
 ## About 🧐
 
@@ -51,18 +51,18 @@ course content. There are also a few things you'll need to do to get set up.
 
 You'll need to make accounts on the following sites:
 
-- **Piazza:** We’ll be using Piazza as our course message and discussion board. More
+- **Campuswire:** We’ll be using Campuswire as our course message and discussion board. More
   details are in the [Communication](#communication-) section below. If you
-  didn’t already get an invitation to our Piazza course, [sign up
-  here][piazza].
+  didn’t already get an invitation to our Campuswire course, [sign up
+  here][campuswire] with join code 4659.
 
 - **Gradescope:** You’ll submit all assignments and exams to
   [Gradescope][gradescope]. This is where all of
   your grades will live as well. Most of the assignments will be coding
   assignments. Parts of these assignments will be manually graded, but most of
   them will be autograded. You should have received an email invitation for
-  Gradescope, but if not please let us know as soon as possible (preferably via
-  Piazza).
+  Gradescope, but if not please let us know as soon as possible via
+  Campuswire.
 
 - **GitHub:** Like in DSC 30, you'll _access_ all course content (lecture slides
   and assignments) by _pulling_ our course GitHub repository. [The link to the
@@ -76,34 +76,32 @@ Note that we will not be using Canvas for anything this quarter.
 
 As soon as you are able to, go follow the steps in the [Tech
 Support](../tech_support) page of the course website to set up your development
-environment for the course.
+environment for the course. The first discussion section on Wednesday, January 7th is designed to help you get your environment set up so you complete the assignments.
 
 ### Forms
 
 Please fill out the [Welcome Survey][welcome-survey] to tell us a bit more about
-yourself and tell us if you need an alternate exam.
+yourself and notify us about any exam conflicts.
 
 ---
 
 ## Communication 💬
 
-This quarter, we’ll be using Piazza as our course message board. You will be added
-to Piazza automatically; use the invite link in the section above if you weren't
-added.
+This quarter, we’ll be using Campuswire as our course message board. If you didn’t already get an invitation to our Campuswire course, [sign up here][campuswire] with join code 4659.
 
 If you have a question about anything to do with the course — if you’re stuck
 on a problem, didn’t understand something from lecture, want clarification on
 course logistics, or just have a general question about data science — you can
-make a post on Piazza. We only ask that if your question includes some or all of an
+make a post on Campuswire. We only ask that if your question includes some or all of an
 answer (even if you’re not sure it’s right), please make your post private so
 that others cannot see it. You can also post anonymously to other students if
 you prefer.
 
-Course staff will regularly check Piazza and try to answer any questions that you
+Course staff will regularly check Campuswire and try to answer any questions that you
 have. You’re also encouraged to answer questions asked by other students.
 Explaining something is a great way to solidify your understanding of it!
 
-**Please don’t email individual staff members, just make a private or public Piazza
+**Please don’t email individual staff members, just make a private or public Campuswire
 post instead.**
 
 ---
@@ -112,18 +110,9 @@ post instead.**
 
 ### Lectures
 
-Lectures will be held in-person on Tuesdays and Thursdays from 9:30-10:50AM in <a href="https://map.concept3d.com/?id=1005#!ct/18312?s/CENTR_Main">CENTR</a> 113.
-Lectures will be podcasted.
-
-**New**{: .label .label-green } In the Welcome Survey at the start of the
-quarter, you will have the option of opting into lecture attendance or opting
-out. If you choose to opt in, lecture attendance will be worth 5% of your
-overall grade. If you choose to opt out, attendance will be worth 0%, and your
-midterm and final exam grade will each be worth 2.5% more. To receive lecture
-attendance for a given week, you must attend and participate in the in-lecture
-activities for both lectures that week. Each lecture will be weighted equally
-towards the lecture attendance portion of your grade, with 4 missed lectures
-allowed without penalty.
+Lectures will be held in-person on Tuesdays and Thursdays from 9:30-10:50AM and 11AM-12:20PM in <a href="https://map.concept3d.com/?id=1005#!m/761769?share">PODEM 1A18</a>
+Attendance is not required, **though you are encouraged to
+attend in-person if you are able to**. Lectures will be podcasted.
 
 Lecture notebooks will be your main resource in this class. You can access them,
 along with all course materials, by pulling from the [course GitHub
@@ -131,48 +120,50 @@ repository][github]. We will also link HTML previews of each lecture notebook
 from the course homepage; you can use these to annotate the lecture notebooks
 with a tablet, if you'd like.
 
-Supplementary readings (which are different from pre-lecture readings) will
+Supplementary readings will
 primarily come from _Learning Data Science_, a textbook written
-by Sam Lau. It can be found at [learningds.org](https://learningds.org). Some
-readings will come from [notes.dsc80.com](https://notes.dsc80.com), a set of
-notes that were originally written to supplement DSC 80. Supplementary readings
-are not required, in that you won't be tested on anything that appears only in
-the readings but not in lectures or assignments, but you should still complete
-them to supplement your understanding!
+by Sam Lau, Joey Gonzalez, and Deb Nolan. It is available for free online at [learningds.org](https://learningds.org). Some
+readings will come from other free online sources, including [notes.dsc80.com](https://notes.dsc80.com), a set of course 
+notes that were originally written to supplement DSC 80 when it was created. 
 
-### Discussions
+You are responsible for all material included in the posted lecture notebooks, whether or not we have time to discuss all of that material in lecture. You may also be tested on material covered only in assignments. You will not be tested on anything that appears only in the readings but not in lectures or assignments, but you should still complete the readings to boost your understanding!
 
-<!-- We will not be using the scheduled discussion times for this course. Instead, we
-will post Exam Prep worksheets with suggested questions from past exams. -->
+### Discussions and Lab Reflections
 
-<!-- **New**{: .label .label-green } In past offerings of DSC 80, students often
-wished for more opportunities to practice the types of questions that will be
-asked on the midterm and final exams. To address this, we will be using
-discussions as **exam prep**. In the Welcome Survey at the start of the quarter,
-you will have the option of opting into discussion or opting out. If you choose
-to opt in, discussions will be worth 5% of your overall
-grade. If you choose to opt out, discussion will be worth 0%, and your midterm
-and final exam grade will each be worth 2.5% more. -->
+Discussions will be held in-person on Wednesdays from 1-1:50PM and 2-2:50PM in <a href="https://map.concept3d.com/?id=1005#!m/237176?share">CSB 002</a>. Discussion sections will be podcasted.
 
-<!-- In each discussion, the TA will prepare a worksheet of exam questions. You will
-receive credit for discussion for a particular week if you attend the discussion
-in person and complete the worksheet. Attending at least 8 discussions during
-the 10-week quarter will earn full credit for discussion. -->
-In each discussion, the TA will prepare a worksheet of exam questions. You are encouraged to attend the discussion sections, but it is not required.
+You'll spend the vast majority of your time in this course on [labs](#labs) and
+[projects](#projects), which you'll read more about in the sections below. The
+labs you complete each week will give you hands-on practice with the tools and
+techniques introduced in lectures. While completing the labs is important, it's
+also important to _reflect_ on your lab work once grades are released, and
+think about how you could have approached problems differently (e.g. more
+efficiently).
 
-### Labs
+Therefore, in discussion sections on Wednesdays, the TA will discuss solutions to a _subset_
+of the lab that was due that Monday (2 days **before** discussion). When you
+attend, you'll have a chance to discuss your implementation with course staff
+and hear how others attempted the problems. Hopefully, you'll leave with a
+stronger understanding of the learning objectives of the lab. Attending discussion and reflecting on your labs will also benefit you since you'll be allowed to resubmit labs for some additional credit via a redemption policy, described in the next section.
+
+### Labs and Lab Redemption
 
 There will be **9 lab assignments** due weekly throughout the quarter. Each lab
 assignment will consist of a mixture of coding and free response questions.
 Coding questions will ask you to fill in the body of a function. Public tests
 are usually provided so that you can make sure that you\'re on the right track
-(_similar to_ DSC 20). However, your submission's final score will use a private
-autograder with hidden tests.
+(_similar to_ DSC 20), however, your submission will be graded using a private
+autograder with hidden tests. You will access labs (and projects) by pulling the [course GitHub repository][github].
 
 Each lab is worth the same amount, but the lowest lab will be dropped when
-calculating your final score.
+calculating your final score. Labs will usually be due **Mondays at 11:59PM**, with the exception of Lab 5 which is due on a Sunday, because of its proximity to the Midterm Exam.
 
-You will access labs (and projects) by pulling the course GitHub repository.
+
+We will also have a lab redemption policy to encourage you to reflect on your solutions to the lab assignments and attend the discussion sections. On Wednesday morning, before the discussion section, we will publish the autograder results for the lab that was just due Monday. You may then review how you did and resubmit the assignment by the next day, **Thursday at 11:59PM**. Your score for the lab will be the **average** of your original submission's score and your resubmission's score. If you forget to turn in a lab or otherwise miss the original deadline, you can also turn in your work for the resubmission only, which will be averaged with your original score (0), essentially giving you half credit as a late penalty. 
+
+Example: Sam submits Lab 1 on the due date, Monday. On Wednesday, he sees his score, which is a 90% since he lost points on a few hidden tests. He fixes the errors and resubmits on Thursday, and his new submission gets 100%. His final recorded grade for Lab 1 is 95% (since (90% + 100%) / 2 = 95%).
+
+Note that this redemption policy applies to **labs only, not projects or project checkpoints.**
 
 ### Projects
 
@@ -188,10 +179,10 @@ will often be a _project checkpoint_. This checkpoint will ensure that you\'re
 on-track to complete the project on time, and should (hopefully) be a source of
 easy points.
 
-The Final Project will be due during finals week and can be thought of as a
+The Final Project (Project 4) will be due during finals week and can be thought of as a
 practical component of the Final Exam.
 
-Note that, unlike labs, the lowest project score is not dropped.
+Note that, unlike labs, the lowest project score is not dropped. Projects and project checkpoints will usually be due on **Fridays at 11:59PM**.
 
 **Working in Pairs**
 
@@ -230,7 +221,7 @@ office hours and study groups.**
 ### Office Hours
 
 To get help on assignments and concepts, course staff will be hosting several
-office hours per week. All office hours will be held in person. See the
+office hours per week. All office hours will be held in person in HDSI 155. See the
 [Calendar](../calendar) tab of the course website for the most up-to-date
 schedule and instructions.
 
@@ -239,11 +230,12 @@ schedule and instructions.
 To summarize all of the events and deadlines, refer to this general weekly
 schedule (which is subject to change in any given week):
 
-| Monday | Tuesday                                           | Wednesday | Thursday | Friday                                        |
-| ------ | ------------------------------------------------- | --------- | -------- | --------------------------------------------- |
-|        | Lecture                                           |           | Lecture  |                                               |
-|        | |  <span style='color:red'><b>Lab due</b></span>         |          | <span style='color:red'><b>Project due</b></span>  |
 
+| Sunday | Monday | Tuesday | Wednesday | Thursday | Friday     | Saturday |
+| ------ | ------ | ------- | --------- | -------- | ---------- | -------- |
+|        |        | Lecture |           | Lecture  |            |          |
+|        |        |         |   Discussion        |          |  |          |
+| | <span style='color:red'><b>Lab due</b></span> | | | | <span style='color:red'><b>Project/checkpoint due</b></span><br><span style='color:red'><b>Lab reflection due (extra credit)</b></span> | |
 ---
 
 ## Exams 📝
@@ -400,7 +392,7 @@ We’re in this together 😎.
 
 DSC 80 is known for being a rigorous but rewarding course. While you will be
 challenged this quarter, we will be offering you plenty of support through
-office hours and Piazza. Make good use of these resources, and you will be able to
+office hours and Campuswire. Make good use of these resources, and you will be able to
 succeed in this course.
 
 There is no excuse for cheating in this course. If you do cheat, we will
@@ -442,7 +434,7 @@ The following activities are considered cheating and are not allowed in DSC 80
 - Using or submitting code acquired from other students (except from your pair
   programming partner during projects), the web, or any other resource not
   officially sanctioned by this course
-- Posting your code online, including on Piazza, unless privately to instructors
+- Posting your code online, including on Campuswire, unless privately to instructors
   only
 - Having any other person complete any part of your assignment on your behalf
 - Completing an assignment on behalf of someone else
@@ -465,7 +457,7 @@ allowed in DSC 80 (not an exhaustive list):
 - Google searching for documentation on Python or `pandas`
 - Working together with other students on assignments without copying or
   sharing answers
-- Posting a question about your approach to a problem on Piazza, without sharing
+- Posting a question about your approach to a problem on Campuswire, without sharing
   your code
 
 The best way to avoid problems is by using your best judgement and remembering
