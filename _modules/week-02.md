@@ -7,6 +7,7 @@ days:
   - name: LAB 1
     type: lab
     title: Python, NumPy, and Pandas
+    url: https://github.com/dsc-courses/dsc80-2026-wi/blob/main/labs/lab01/lab.ipynb
     reading: ''
 - date: '2026-01-13'
   events:
