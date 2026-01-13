@@ -15,6 +15,7 @@ days:
     type: lecture
     title: Aggregating
     reading: '[Ch. 6.2](https://learningds.org/ch/06/pandas_aggregating.html)'
+    html: resources/lectures/lec03/lec03.html
 - date: '2026-01-14'
   events:
   - name: DISC 2
