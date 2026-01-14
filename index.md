@@ -31,73 +31,69 @@ nav_order: 1
 {{ module }}
 {% endfor %}
 
+
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Find the "Jump to the current week" button
-  const jumpButton = document.querySelector('[data-current-week-link]');
-  if (!jumpButton) return;
-
-  // Get all module elements with week data
-  const modules = document.querySelectorAll('.module[data-week-start][data-week-end]');
-  if (modules.length === 0) return;
-
-  // Helper function to parse dates (YYYY-MM-DD format)
-  function parseDate(dateString) {
-    if (!dateString) return null;
-    const parts = dateString.split('-');
-    if (parts.length !== 3) return null;
-    const year = parseInt(parts[0], 10);
-    const month = parseInt(parts[1], 10) - 1; // JS months are 0-indexed
-    const day = parseInt(parts[2], 10);
-    return new Date(year, month, day);
+(function() {
+  const jumpLink = document.querySelector('[data-current-week-link]');
+  if (!jumpLink) {
+    return;
   }
 
-  // Get today's date (at midnight for comparison)
+  const modules = Array.from(document.querySelectorAll('.module'));
+  if (!modules.length) {
+    return;
+  }
+
+  const parseDate = (value) => {
+    if (!value) {
+      return null;
+    }
+    const parsed = new Date(value + 'T00:00:00');
+    if (Number.isNaN(parsed.getTime())) {
+      return null;
+    }
+    return parsed;
+  };
+
+  const moduleData = modules
+    .map((moduleEl) => {
+      const start = parseDate(moduleEl.dataset.weekStart);
+      const end = parseDate(moduleEl.dataset.weekEnd);
+      const header = moduleEl.querySelector('.module-header');
+      if (!start || !end || !header || !header.id) {
+        return null;
+      }
+      return { start, end, header };
+    })
+    .filter(Boolean);
+
+  if (!moduleData.length) {
+    return;
+  }
+
+  moduleData.sort((a, b) => a.start - b.start);
+
   const today = new Date();
-  today.setHours(0, 0, 0, 0);
+  const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+  let target = moduleData.find((module) => (
+    todayMidnight >= module.start && todayMidnight <= module.end
+  ));
 
-  // Find the current week
-  let currentModule = null;
-  let upcomingModule = null;
-  let mostRecentModule = null;
-
-  modules.forEach(function(module) {
-    const startDate = parseDate(module.getAttribute('data-week-start'));
-    const endDate = parseDate(module.getAttribute('data-week-end'));
-
-    if (!startDate || !endDate) return;
-
-    // Check if today is within this week's range
-    if (today >= startDate && today <= endDate) {
-      currentModule = module;
-    }
-
-    // Track the first upcoming module
-    if (!upcomingModule && startDate > today) {
-      upcomingModule = module;
-    }
-
-    // Track the most recent past module
-    if (endDate < today) {
-      if (!mostRecentModule) {
-        mostRecentModule = module;
-      } else {
-        const mostRecentEnd = parseDate(mostRecentModule.getAttribute('data-week-end'));
-        if (endDate > mostRecentEnd) {
-          mostRecentModule = module;
+  if (!target) {
+    if (todayMidnight < moduleData[0].start) {
+      target = moduleData[0];
+    } else {
+      for (let i = moduleData.length - 1; i >= 0; i -= 1) {
+        if (todayMidnight > moduleData[i].end) {
+          target = moduleData[i];
+          break;
         }
       }
     }
-  });
-
-  // Determine which module to jump to
-  let targetModule = currentModule || upcomingModule || mostRecentModule;
-
-  if (targetModule) {
-    const moduleId = targetModule.querySelector('.module-header').getAttribute('id');
-    if (moduleId) {
-      jumpButton.setAttribute('href', '#' + moduleId);
-    }
   }
-});
+
+  if (target) {
+    jumpLink.setAttribute('href', '#' + target.header.id);
+  }
+})();
 </script>
