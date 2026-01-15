@@ -94,6 +94,8 @@ nav_order: 1
 
   if (target) {
     jumpLink.setAttribute('href', '#' + target.header.id);
+    // Automatically scroll to the current week
+    target.header.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 })();
 </script>
