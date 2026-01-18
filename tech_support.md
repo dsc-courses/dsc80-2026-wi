@@ -17,8 +17,6 @@ nav_order: 4
 
 ## Introduction
 
-testing 
-
 In DSC 10, you worked on assignments on DataHub, a computing platform that already had all of the Python packages you needed installed. But in the real world, you'll be expected to set up and maintain a Python environment locally – that is, on your own computer – and so that's what we'll have you do here. **That's right – no DataHub!** You already have experience writing and running code locally from DSC 20 and DSC 30; setting up your environment for DSC 80 will be slightly more involved than it was there, but most of these steps only need to be done once.
 
 There has been a lot written about how to set up a Python environment, so we won't reinvent the wheel. This page will only be a summary; Google will be your main resource. But always feel free to come to a staff member's office hours if you have a question about setting up your environment, using Git, or similar — we're here to help.
