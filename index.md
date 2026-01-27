@@ -36,58 +36,44 @@ nav_order: 1
 <script>
 (function() {
   const jumpLink = document.querySelector('[data-current-week-link]');
-  if (!jumpLink) {
-    return;
-  }
+  if (!jumpLink) return;
 
   const modules = Array.from(document.querySelectorAll('.module'));
-  if (!modules.length) {
-    return;
-  }
+  if (!modules.length) return;
 
-  // Define the quarter start date (first day of Week 1)
-  const quarterStart = new Date('2026-01-06T00:00:00');
   const today = new Date();
-  const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+  today.setHours(0, 0, 0, 0);
 
-  // Calculate the week number based on days since quarter start
-  const daysSinceStart = Math.floor((todayMidnight - quarterStart) / (1000 * 60 * 60 * 24));
-  const currentWeekNumber = Math.max(1, Math.min(Math.floor(daysSinceStart / 7) + 1, modules.length));
-
-  // Find the module for the current week
   let target = null;
 
-  // Try to match by week number first (looking for "Week N" in the header)
-  for (const moduleEl of modules) {
-    const header = moduleEl.querySelector('.module-header');
-    if (!header) continue;
-
-    const headerText = header.textContent || '';
-    const weekMatch = headerText.match(/Week\s+(\d+)/i);
-
-    if (weekMatch && parseInt(weekMatch[1]) === currentWeekNumber) {
-      target = header;
-      break;
+  // Find the current or most recent week using data-week-start/end attributes
+  for (let i = modules.length - 1; i >= 0; i--) {
+    const moduleEl = modules[i];
+    const weekStart = moduleEl.getAttribute('data-week-start');
+    if (weekStart) {
+      const startDate = new Date(weekStart + 'T00:00:00');
+      if (today >= startDate) {
+        target = moduleEl.querySelector('.module-header');
+        break;
+      }
     }
   }
 
-  // Fallback: if we can't find by week number, use the calculated index
-  if (!target && currentWeekNumber > 0 && currentWeekNumber <= modules.length) {
-    const targetModule = modules[currentWeekNumber - 1];
-    if (targetModule) {
-      target = targetModule.querySelector('.module-header');
-    }
-  }
-
-  // If we're before the quarter starts or can't find a match, default to first week
-  if (!target && modules.length > 0) {
+  // Default to first week if nothing found
+  if (!target) {
     target = modules[0].querySelector('.module-header');
   }
 
   if (target && target.id) {
     jumpLink.setAttribute('href', '#' + target.id);
-    // Automatically scroll to the current week
-    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
+
+  // Handle click to scroll
+  jumpLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
 })();
 </script>
