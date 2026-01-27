@@ -38,6 +38,10 @@
                 <small style="margin-right: 8px;"><a href="{{ event.review }}"><button type="button" class="btn btn-info">📝 review</button></a></small>
                 {%- endif -%}
 
+                {%- if event.extra -%}
+                <small style="margin-right: 8px;"><a href="{{ event.extra }}"><button type="button" class="btn btn-info">📝 extra</button></a></small>
+                {%- endif -%}
+
                 {%- if event.html -%}
                 <small><a href="{{ event.html }}"><button type="button" class="btn btn-info">📝 write</button></a></small>
                 {%- endif -%}
