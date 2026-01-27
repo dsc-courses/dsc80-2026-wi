@@ -19,7 +19,7 @@ nav_order: 1
 [github]: https://github.com/dsc-courses/dsc80-2026-fa
 [welcome-survey]: https://forms.gle/byE5q4b1iKsBzEwN7
 
-[Jump to the current week](#{{ site.modules.first.title | slugify }}){: .btn data-current-week-link } 
+[Jump to the current week](#{{ site.modules.first.title | slugify }}){: .btn data-current-week-link="" }
 [Podcasts](https://podcast.ucsd.edu/){: .btn }
 [Welcome Survey][welcome-survey]{: .btn }
 
