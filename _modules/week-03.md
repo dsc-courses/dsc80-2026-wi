@@ -15,6 +15,7 @@ days:
     type: lecture
     title: Exploring and Cleaning Data
     reading: '[Ch. 9](https://learningds.org/ch/09/wrangling_intro.html) and [10](https://learningds.org/ch/10/eda_intro.html)'
+    html: resources/lectures/lec05/lec05.html
 - date: '2026-01-21'
   events:
   - name: DISC 3
@@ -27,6 +28,8 @@ days:
     type: lecture
     title: Hypothesis and Permutation Testing
     reading: '[Ch. 17](https://learningds.org/ch/17/inf_pred_gen_intro.html)'
+    html: resources/lectures/lec06/lec06.html
+    review: resources/lectures/lec06/review.html
 - date: '2026-01-23'
   events:
   - name: PROJ 1
