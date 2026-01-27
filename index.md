@@ -71,7 +71,8 @@ nav_order: 1
   // Handle click to scroll
   jumpLink.addEventListener('click', function(e) {
     e.preventDefault();
-    if (target) {
+    if (target && target.id) {
+      window.location.hash = target.id;
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   });
