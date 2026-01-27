@@ -15,6 +15,7 @@ days:
     type: lecture
     title: Missingness Mechanisms
     reading: '[A1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4121561/), [A2](https://stefvanbuuren.name/fimd/sec-MCAR.html)'
+    html: resources/lectures/lec07/lec07.html
 - date: '2026-01-28'
   events:
   - name: DISC 4
