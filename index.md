@@ -66,6 +66,8 @@ nav_order: 1
 
   if (target && target.id) {
     jumpLink.setAttribute('href', '#' + target.id);
+    // Auto-scroll to current week on page load (centered)
+    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 
   // Handle click to scroll
@@ -73,7 +75,7 @@ nav_order: 1
     e.preventDefault();
     if (target && target.id) {
       window.location.hash = target.id;
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      target.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   });
 })();
