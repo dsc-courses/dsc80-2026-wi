@@ -36,46 +36,76 @@ nav_order: 1
 <script>
 (function() {
   const jumpLink = document.querySelector('[data-current-week-link]');
-  if (!jumpLink) return;
+  if (!jumpLink) {
+    return;
+  }
 
   const modules = Array.from(document.querySelectorAll('.module'));
-  if (!modules.length) return;
+  if (!modules.length) {
+    return;
+  }
+
+  const parseDate = (value) => {
+    if (!value) {
+      return null;
+    }
+    const parsed = new Date(value + 'T00:00:00');
+    if (Number.isNaN(parsed.getTime())) {
+      return null;
+    }
+    return parsed;
+  };
+
+  const moduleData = modules
+    .map((moduleEl) => {
+      const start = parseDate(moduleEl.dataset.weekStart);
+      const end = parseDate(moduleEl.dataset.weekEnd);
+      const header = moduleEl.querySelector('.module-header');
+      if (!start || !end || !header || !header.id) {
+        return null;
+      }
+      return { start, end, header };
+    })
+    .filter(Boolean);
+
+  if (!moduleData.length) {
+    return;
+  }
+
+  moduleData.sort((a, b) => a.start - b.start);
 
   const today = new Date();
-  today.setHours(0, 0, 0, 0);
+  const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
 
-  let target = null;
+  let target = moduleData.find((module) => (
+    todayMidnight >= module.start && todayMidnight <= module.end
+  ));
 
-  // Find the current or most recent week using data-week-start/end attributes
-  for (let i = modules.length - 1; i >= 0; i--) {
-    const moduleEl = modules[i];
-    const weekStart = moduleEl.getAttribute('data-week-start');
-    if (weekStart) {
-      const startDate = new Date(weekStart + 'T00:00:00');
-      if (today >= startDate) {
-        target = moduleEl.querySelector('.module-header');
-        break;
+  if (!target) {
+    if (todayMidnight < moduleData[0].start) {
+      target = moduleData[0];
+    } else {
+      for (let i = moduleData.length - 1; i >= 0; i -= 1) {
+        if (todayMidnight > moduleData[i].end) {
+          target = moduleData[i];
+          break;
+        }
       }
     }
   }
 
-  // Default to first week if nothing found
-  if (!target) {
-    target = modules[0].querySelector('.module-header');
-  }
-
-  if (target && target.id) {
-    jumpLink.setAttribute('href', '#' + target.id);
+  if (target) {
+    jumpLink.setAttribute('href', '#' + target.header.id);
     // Auto-scroll to current week on page load (centered)
-    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    target.header.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 
   // Handle click to scroll
   jumpLink.addEventListener('click', function(e) {
     e.preventDefault();
-    if (target && target.id) {
-      window.location.hash = target.id;
-      target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if (target && target.header.id) {
+      window.location.hash = target.header.id;
+      target.header.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   });
 })();
