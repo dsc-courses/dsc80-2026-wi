@@ -70,7 +70,5 @@ document.addEventListener('DOMContentLoaded', function() {
       target.scrollIntoView({behavior: 'smooth', block: 'start'});
     };
   }
-
-  console.log('Jump to week: ' + (target ? target.id : 'none') + ', Today: ' + today.toDateString());
 });
 </script>
