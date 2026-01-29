@@ -34,47 +34,43 @@ nav_order: 1
 
 
 <script>
-(function() {
-  const jumpLink = document.querySelector('[data-current-week-link]');
+document.addEventListener('DOMContentLoaded', function() {
+  var jumpLink = document.querySelector('[data-current-week-link]');
   if (!jumpLink) return;
 
-  const modules = Array.from(document.querySelectorAll('.module'));
+  var modules = document.querySelectorAll('.module');
   if (!modules.length) return;
 
-  const today = new Date();
+  var today = new Date();
   today.setHours(0, 0, 0, 0);
 
-  let target = null;
+  var target = null;
+  var i;
 
-  // Find the current or most recent week using data-week-start/end attributes
-  for (let i = modules.length - 1; i >= 0; i--) {
-    const moduleEl = modules[i];
-    const weekStart = moduleEl.getAttribute('data-week-start');
+  for (i = modules.length - 1; i >= 0; i--) {
+    var weekStart = modules[i].getAttribute('data-week-start');
     if (weekStart) {
-      const startDate = new Date(weekStart + 'T00:00:00');
+      var startDate = new Date(weekStart + 'T00:00:00');
       if (today >= startDate) {
-        target = moduleEl.querySelector('.module-header');
+        target = modules[i].querySelector('.module-header');
         break;
       }
     }
   }
 
-  // Default to first week if nothing found
-  if (!target) {
+  if (!target && modules.length > 0) {
     target = modules[0].querySelector('.module-header');
   }
 
   if (target && target.id) {
-    jumpLink.setAttribute('href', '#' + target.id);
+    jumpLink.href = '#' + target.id;
+    jumpLink.onclick = function(e) {
+      e.preventDefault();
+      location.hash = target.id;
+      target.scrollIntoView({behavior: 'smooth', block: 'start'});
+    };
   }
 
-  // Handle click to scroll
-  jumpLink.addEventListener('click', function(e) {
-    e.preventDefault();
-    if (target && target.id) {
-      window.location.hash = target.id;
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  });
-})();
+  console.log('Jump to week: ' + (target ? target.id : 'none') + ', Today: ' + today.toDateString());
+});
 </script>
