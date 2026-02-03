@@ -15,6 +15,7 @@ days:
     type: lecture
     title: HTTP Basics
     reading: '[Ch. 14.2-14.4](https://learningds.org/ch/14/web_json.html)'
+    html: resources/lectures/lec09/lec09.html
 - date: '2026-02-04'
   events:
   - name: DISC 5
