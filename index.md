@@ -26,7 +26,10 @@ nav_order: 1
 
 
 {: .success }
-**Welcome to DSC 80! 👋 Make sure to read the [syllabus][syllabus], check that you can access [Gradescope][gradescope] and [Campuswire][campuswire], and fill out the [Welcome Survey][welcome-survey].**
+
+**The midterm exam is on Tuesday, February 10th during lecture. See [Campuswire](https://campuswire.com/c/GFDCC5DB7/feed/102) for more details**
+
+<!-- **Welcome to DSC 80! 👋 Make sure to read the [syllabus][syllabus], check that you can access [Gradescope][gradescope] and [Campuswire][campuswire], and fill out the [Welcome Survey][welcome-survey].** -->
 
 {% for module in site.modules %}
 {{ module }}
