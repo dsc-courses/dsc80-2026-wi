@@ -28,6 +28,7 @@ days:
     type: lecture
     title: Web Scraping
     reading: '[Ch. 14.2-14.4](https://learningds.org/ch/14/web_json.html)'
+    html: resources/lectures/lec10/lec10.html
 - date: '2026-02-06'
   events:
   - name: PROJ 2
