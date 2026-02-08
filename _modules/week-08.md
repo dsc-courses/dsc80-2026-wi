@@ -4,10 +4,10 @@ weekNumber: 8
 days:
 - date: '2026-02-23'
   events:
-  - name: LAB 7
-    type: lab
-    title: Regular Expressions
-    reading: '[Ch. 13](https://learningds.org/ch/13/text_intro.html)'
+  - name: PROJ 3
+    type: proj
+    title: Project 3 
+    reading: ''
 - date: '2026-02-24'
   events:
   - name: LEC 14

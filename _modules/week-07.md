@@ -4,10 +4,10 @@ weekNumber: 7
 days:
 - date: '2026-02-16'
   events:
-  - name: LAB 6
+  - name: LAB 7
     type: lab
-    title: APIs and Web Scraping
-    reading: ''
+    title: Regular Expressions
+    reading: '[Ch. 13](https://learningds.org/ch/13/text_intro.html)'
 - date: '2026-02-17'
   events:
   - name: LEC 12
@@ -30,6 +30,6 @@ days:
   events:
   - name: PROJ 3
     type: proj
-    title: Project 3
+    title: Project 3 Checkpoint
     reading: ''
 ---

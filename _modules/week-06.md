@@ -29,8 +29,9 @@ days:
     reading: '[Ch. 13](https://learningds.org/ch/13/text_intro.html)'
 - date: '2026-02-13'
   events:
-  - name: PROJ 3
-    type: proj
-    title: Project 3 Checkpoint
+  - name: LAB 6
+    type: lab
+    title: APIs and Web Scraping
+    url: https://github.com/dsc-courses/dsc80-2026-wi/blob/main/labs/lab06/lab.ipynb
     reading: ''
 ---
