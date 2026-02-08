@@ -18,7 +18,7 @@ days:
   events:
   - name: DISC 8
     type: disc
-    title: Lab 7 Reflection
+    title: Practice Problems
     reading: ''
 - date: '2026-02-26'
   events:
