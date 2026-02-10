@@ -27,6 +27,7 @@ days:
     type: lecture
     title: Regular Expressions
     reading: '[Ch. 13](https://learningds.org/ch/13/text_intro.html)'
+    html: resources/lectures/lec11/lec11.html
 - date: '2026-02-13'
   events:
   - name: LAB 6
