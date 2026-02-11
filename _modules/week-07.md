@@ -7,6 +7,7 @@ days:
   - name: LAB 7
     type: lab
     title: Regular Expressions
+    url: https://github.com/dsc-courses/dsc80-2026-wi/blob/main/labs/lab07/lab.ipynb
     reading: '[Ch. 13](https://learningds.org/ch/13/text_intro.html)'
 - date: '2026-02-17'
   events:
