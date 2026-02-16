@@ -32,5 +32,6 @@ days:
   - name: PROJ 3
     type: proj
     title: Project 3 Checkpoint
+    url: https://github.com/dsc-courses/dsc80-2026-wi/blob/main/projects/proj03/project.ipynb
     reading: ''
 ---
