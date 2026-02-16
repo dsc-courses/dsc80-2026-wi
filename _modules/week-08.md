@@ -6,7 +6,7 @@ days:
   events:
   - name: PROJ 3
     type: proj
-    title: Project 3 
+    title: Language Models 🗣
     url: https://github.com/dsc-courses/dsc80-2026-wi/blob/main/projects/proj03/project.ipynb
     reading: ''
 - date: '2026-02-24'
