@@ -15,6 +15,7 @@ days:
     type: lecture
     title: Text Features
     reading: '[Ch. 13.4](https://learningds.org/ch/13/text_sotu.html)'
+    html: resources/lectures/lec12/lec12.html
 - date: '2026-02-18'
   events:
   - name: DISC 7
