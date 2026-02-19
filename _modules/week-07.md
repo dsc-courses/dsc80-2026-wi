@@ -28,6 +28,7 @@ days:
     type: lecture
     title: Linear Regression
     reading: '[Ch. 15.0-15.6](https://learningds.org/ch/15/linear_intro.html)'
+    html: resources/lectures/lec13/lec13.html
 - date: '2026-02-20'
   events:
   - name: PROJ 3
