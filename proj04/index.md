@@ -10,34 +10,29 @@ nav_order: 7
 
 # 📊 Final Project: The Data Science Lifecycle 
 {:.no_toc}
-<!-- ### Checkpoint 1 (1%) Due: Friday, February 28th at 11:59PM -->
+### Checkpoint 1 (1%) Due: Friday, February 27th at 11:59PM 
 {:.no_toc}
-<!-- ### Checkpoint 2 (1%) Due: Friday, March 7th at 11:59PM -->
+### Checkpoint 2 (1%) Due: Friday, March 6th at 11:59PM 
 {:.no_toc}
-<!-- ### **Final Project (10%) Due: Friday, March 14th at 11:59PM**  -->
+### **Final Project (10%) Due: Tuesday, March 17th at 11:59PM**  
 {:.no_toc}
 
-### <span style="color:red">No extensions allowed on the final deadline</span>
+<!--### <span style="color:red">No extensions allowed on the final deadline</span>-->
 {:.no_toc}
 ---
 
-Welcome to Final Project, the final assignment of the quarter! 👋
+Welcome to the Final Project, the final assignment of the quarter! 👋
 
-This project aims to be a culmination of everything you've learned this quarter. In the project, you will conduct an open-ended investigation into one of the three datasets (Recipes and Ratings 🍽, League of Legends ⌨️, or Power Outages 🔋). **Specifically, you'll draw several visualizations to help understand the distributions of key variables, assess the missingness mechanisms of columns with missing values, test a hypotheses about the data, and finally, build and improve a predictive model.** This project will be entirely manually graded by us – that's right, no autograders!
+This project aims to be a culmination of everything you've learned this quarter. In the project, you will conduct an open-ended investigation into one of the three datasets (Recipes and Ratings 🍽, League of Legends ⌨️, or Power Outages 🔋). **Specifically, you'll draw several visualizations to help understand the distributions of key variables, assess the missingness mechanisms of columns with missing values, test hypotheses about the data, and finally, build and improve a predictive model.** This project will be entirely manually graded by us – that's right, no autograders!
 
-Final Project worth 10% in your overall grade, which means it's worth double what previous projects were worth. There are also two checkpoints, each worth 1%. 
+The Final Project is worth 10% of your overall grade, which means it's worth double what previous projects were worth. There are also two checkpoints, each worth 1%. The checkpoints are structured differently than other project checkpoints; rather than having you submit any code, you'll answer a few questions about your progress on the project. More details are in the [Checkpoint Submission](#submission-and-rubric) section towards the bottom of this page. 
 
-As your final deliverables, you'll submit two things to us: a **public-facing website** as well as a **PDF of your Jupyter Notebook**. We encourage you to build something you are proud of as this will give you something concrete to put on your resume and show to potential employers!
+As your final deliverables, you'll submit two things:
 
-{: .green }
-> **Final Project is due on Friday, June 6th at 11:59PM. This is a hard deadline; you may NOT use the extension on this project.** This is because we need to start grading projects right when you turn them in, so that there is enough time for you to make regrade requests before we submit grades to campus. <br><br>
-> The Final Project does also have two checkpoints, which is due on **Friday, May 23rd** and **Friday, May 30th**. The Final Project Checkpoints are structured differently than other project checkpoints; rather than having you submit any code, you'll answer a few questions about your progress on the project. More details are in the [Checkpoint Submission](#submission-and-rubric) towards the bottom of this page. You can submit the [checkpoint 1](https://www.gradescope.com/courses/941090/assignments/5820453/) and [checkpoint 2](https://www.gradescope.com/courses/941090/assignments/5820459/) on Gradescope; make sure to tag your partner if you have one.
+1. An **analysis**, submitted as a Jupyter Notebook. This will contain the details of your work. Focus on completing your analysis first, as the analysis is the bulk of the project.
+2. A **report**, submitted as a website. This will contain a narrative "story" with visuals. Work on this after finishing _most_ of your analysis.
 
-The project is broken into two parts:
-
-- Part 1: An **analysis**, submitted as a Jupyter Notebook. This will contain the details of your work. **Focus on completing your analysis before moving to Part 2, as the analysis is the bulk of the project.**
-- Part 2: A **report**, submitted as a website. This will contain a narrative "story" with visuals. **Focus on this after finishing _most_ of your analysis.**
-
+We encourage you to build something you are proud of as this will give you something concrete to put on your resume and show to potential employers!
 ---
 
 ## Table of Contents
