@@ -23,7 +23,7 @@ nav_order: 7
 
 Welcome to the Final Project, the final assignment of the quarter! 👋
 
-This project aims to be a culmination of everything you've learned this quarter. In the project, you will conduct an open-ended investigation into one of the three datasets (Recipes and Ratings 🍽, League of Legends ⌨️, or Power Outages 🔋). **Specifically, you'll draw several visualizations to help understand the distributions of key variables, assess the missingness mechanisms of columns with missing values, test hypotheses about the data, and finally, build and improve a predictive model.** This project will be entirely manually graded by us – that's right, no autograders!
+This project aims to be a culmination of everything you've learned this quarter. In the project, you will conduct an open-ended investigation into one of three datasets: Recipes and Ratings 🍽, League of Legends ⌨️, or Power Outages 🔋. **Specifically, you'll draw several visualizations to help understand the distributions of key variables, assess the missingness mechanisms of columns with missing values, test hypotheses about the data, and finally, build and improve a predictive model.** This project will be entirely manually graded by us – that's right, no autograders!
 
 The Final Project is worth 10% of your overall grade, which means it's worth double what previous projects were worth. There are also two checkpoints, each worth 1%. The checkpoints are structured differently than other project checkpoints; rather than having you submit any code, you'll answer a few questions about your progress on the project. More details are in the [Checkpoint Submission](#submission-and-rubric) section towards the bottom of this page. 
 
@@ -33,6 +33,7 @@ As your final deliverables, you'll submit two things:
 2. A **report**, submitted as a website. This will contain a narrative "story" with visuals. Work on this after finishing _most_ of your analysis.
 
 We encourage you to build something you are proud of as this will give you something concrete to put on your resume and show to potential employers!
+
 ---
 
 ## Table of Contents
@@ -51,12 +52,12 @@ In this project, you will perform an open-ended investigation into a **single da
 
 The dataset description pages linked above each have three sections:
 - **Getting the Data**: Describes how to access the data and, in some cases, what various features mean. (In general, you're going to have to understand what your data means on your own!)
-- **Example Questions and Prediction Problems**: Example questions to explore in Part 1: Steps 1-4, and example prediction problems to build models for in Part 1: Steps 5-8. Use these as inspiration, but feel free to come up with your own questions and prediction problems!
+- **Example Questions and Prediction Problems**: Example questions to explore in Part 1: Steps 1-4, and example prediction problems to build models for in Part 1: Steps 5-8. Use these as inspiration, but come up with your own questions and prediction problems!
 - **Special Considerations**: Things to be aware of when working with the given dataset, e.g. some additional requirements.
 
 When selecting which dataset you are going to use for your project, try choosing the one whose topic appeals to you the most as that will make finishing the project a lot more enjoyable.
 
-To help contextualize the kinds of analysis you can do in this project, it might help to look at these examples from Spring 2023. These examples offer insights into crafting effective research questions, but bear in mind that they have their unique strengths and weaknesses. Treat them as a foundation for inspiration, but **don't** just repeat or copy their work – be original!
+To help contextualize the kinds of analysis you can do in this project, it might help to look at these examples from past students. These examples offer insights into crafting effective research questions, but bear in mind that they have their unique strengths and weaknesses. Treat them as a foundation for inspiration, but **don't** just repeat or copy their work – be original!
 
 1. [League of Legends First Blood Statistical Analysis](https://krystalqjx.github.io/LOL-analysis/): This project excelled in clarifying their research aims, making the study understandable to a broader audience. In your own project, ensure that you provide a lucid and detailed explanation of your research focus.
 2. [Analyzing Power Outages](https://nghosh24.github.io/power-outages/): This project presents a noval way to do the data visualization. In your project, please think about what is the best way to present your data.
@@ -72,7 +73,7 @@ Before choosing a dataset, read the rest of this page to see what's required of 
 
 Before beginning your analysis, you'll need to set up a few things.
 
-1. Pull the latest version of the [`dsc80-2025-sp`](https://github.com/dsc-courses/dsc80-2025-sp/) repo. Within the `projects/project04` folder, there is a `template.ipynb` notebook that you will use as a template for the project. If you delete the file or want another copy of the template, you can re-download it from [here](https://github.com/dsc-courses/dsc80-2025-sp/blob/main/projects/project04/template.ipynb). **This is where your analysis will live; you will submit this entire notebook to us.**
+1. Pull the latest version of the course [Github repository](https://github.com/dsc-courses/dsc80-2026-wi/). Within the `projects/project04` folder, there is a `template.ipynb` notebook that you will use as a template for the project. If you delete the file or want another copy of the template, you can re-download it from [here](https://github.com/dsc-courses/dsc80-2026-wi/blob/main/projects/project04/template.ipynb). **This is where your analysis will live; you will submit the full contents of this notebook to us.**
 1. Select **one** of the three [datasets mentioned above](#choosing-a-dataset), download it, and load it into your template notebook.
 
 Once you have your dataset loaded in your notebook, it's time for you to find meaning in the real-world data you've collected! Follow the steps below.
