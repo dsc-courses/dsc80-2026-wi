@@ -19,7 +19,8 @@ days:
   events:
   - name: DISC 8
     type: disc
-    title: Practice Problems
+    title: Practice Problems (Final Exam Spring 2024)
+    url: https://practice.dsc80.com/sp24-final/index.html
     reading: ''
 - date: '2026-02-26'
   events:
