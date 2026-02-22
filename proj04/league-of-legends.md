@@ -28,7 +28,7 @@ You'll probably want to be at least a little bit familiar with [*League of Legen
 
 The data can be found on the website [Oracle's Elixir](https://oracleselixir.com/tools/downloads) at the provided Google Drive link.
 
-Keep in mind that League of Legends changes significantly between years. This can make it difficult to combine or make comparisons between datasets from different years, so we recommend picking a single year's data only.
+Keep in mind that League of Legends changes significantly between years. This can make it difficult to combine or make comparisons between datasets from different years, so we recommend using data from a **single year** only.
 
 ---
 
