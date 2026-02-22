@@ -28,7 +28,7 @@ You'll probably want to be at least a little bit familiar with [*League of Legen
 
 The data can be found on the website [Oracle's Elixir](https://oracleselixir.com/tools/downloads) at the provided Google Drive link.
 
-We've verified that it's possible to satisfy the requirements of the project using match data from 2022. You're welcome to use newer or older datasets if you wish, but keep in mind that League of Legends changes significantly between years; this can make it difficult to combine or make comparisons between datasets from different years.
+Keep in mind that League of Legends changes significantly between years. This can make it difficult to combine or make comparisons between datasets from different years, so we recommend picking a single year's data only.
 
 ---
 
@@ -39,7 +39,7 @@ Feel free to base your exploration into the dataset in Steps 1-4 around one of t
 - Looking at [tier-one professional leagues](https://en.wikipedia.org/wiki/List_of_League_of_Legends_leagues_and_tournaments), which league has the most "action-packed" games? Is the amount of "action" in this league significantly different than in other leagues? Note that you'll have to come up with a way of quantifying "action".
 - Which competitive region has the highest win rate against teams outside their region? Note you will have to find and merge region data for this question as the dataset does not have it.
 - Which role "carries" (does the best) in their team more often: ADCs (Bot lanes) or Mid laners?
-- Is Talon (former tutor Costin's favorite champion) more likely to win or lose any given match?
+- Is Talon (or your favorite champion) more likely to win or lose any given match?
 
 Feel free to use one of the prompts below to build your predictive model in Steps 5-8, or come up with a prediction task of your own.
 
@@ -56,5 +56,5 @@ Make sure to justify what information you would know at the “time of predictio
 
 ### Step 2: Data Cleaning and Exploratory Data Analysis
 
-- Each `'gameid'` corresponds to up to 12 rows – one for each of the 5 players on both teams and 2 containing summary data for the two teams (try to find out what distinguishes those rows). After selecting your line of inquiry, make sure to remove either the player rows or the team rows so as not to have issues later in your analysis.
+- Each `'gameid'` corresponds to up to 12 rows – one for each of the 5 players on both teams and 2 containing summary data for the two teams (try to find out what distinguishes those rows). After selecting your line of inquiry, make sure to remove either the player rows or the team rows so that all of the rows in your dataset represent the same type of thing.
 - Many columns should be of type `bool` but are not.
