@@ -170,11 +170,11 @@ Your website must clearly contain the following eight headings, corresponding to
 
 **Don't** include "Step 1", "Step 2", etc. in your headings – the headings should be exactly as they are above.
 
-The specific content your website needs to contain is described in the "Report on Website" columns above. Make sure to also give your website a creative title that relates to the question you're trying to answer, and clearly state your name(s).
+The specific content your website should contain is described in the "Report on Website" columns above. Make sure to also give your website a creative title that relates to the question you're trying to answer, and clearly include your name(s).
 
 Your report will be in the form of a _static_ website, hosted for free on GitHub Pages. More specifically, you'll use [Jekyll](https://jekyllrb.com), a framework built into GitHub Pages that allows you to create professional-looking websites just by writing Markdown ([dsc80.com](https://dsc80.com) is built using Jekyll!). GitHub Pages does the "hard" part of converting your Markdown to HTML.
 
-If you'd like to follow the official [GitHub Pages & Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll) tutorial, you're welcome to, though we will provide you with a perhaps simpler set of instructions here. A very basic site with the required headings and one embedded visualization can be found at [rampure.org/dsc80-proj3-test1/](http://rampure.org/dsc80-proj3-test1/); the source code for the site is [here](https://github.com/surajrampure/dsc80-proj3-test1).
+If you'd like to follow the official [GitHub Pages & Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll) tutorial, you're welcome to, though we will provide you with a perhaps simpler set of instructions here. 
 
 ### Step 1: Initializing a Jekyll GitHub Pages Site
 
@@ -198,16 +198,16 @@ Note that the source code for your site lives in `README.md`. **As you push chan
    - Commit your changes using `git commit -m '<some message here>'`, e.g. `git commit -m 'changed title of website'`.
    - Push your changes using `git push`.
 
-Moving forward, we recommend making edits to your website source code locally, rather than directly on GitHub. This is in part due to the fact that you'll be creating folders and adding files to your source code.
+Moving forward, we recommend making edits to your website source code locally, as described here, rather than directly editing `README.md` on GitHub. This is in part due to the fact that you'll be creating folders and adding files to your source code.
 
 ### Step 2: Choosing a Theme
 
-The default "theme" of a Jekyll site is not all that interesting.
+The default "theme" of a Jekyll site is not all that interesting, so you will be required to change it.
 
 To change the theme of your site:
 
 1. Create a file in your repository called `_config.yml`.
-1. Go [here](https://pages.github.com/themes/), and click the links of various themes until you find one you like.
+1. Go [here](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll), and click the links for various themes until you find one you like.
 1. Open the linked repository for the theme you'd like to use and scroll down to the "Usage" section of the README. Copy the necessary information from the README to your `_config.yml` and push it to your site.
 
 For instance, if I wanted to use the Merlot theme, I'd put the following in my `_config.yml`:
@@ -218,19 +218,17 @@ plugins:
   - jekyll-remote-theme # add this line to the plugins list if you already have one
 ```
 
-Note that you're free to use any Jekyll theme, not just the ones that appear [here](https://pages.github.com/themes/). You are required to choose _some_ theme other than the default, though. See more details about themes [here](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll).
-
 ### Step 3: Embedding Content
 
-Now comes the interesting part – actually including content in your site. The [Markdown cheat sheet](https://www.markdownguide.org/cheat-sheet/) contains tips on how to format text and other page components in Markdown (and if you'd benefit by seeing an example, you could always look at the Markdown source of [this very page](https://raw.githubusercontent.com/dsc-courses/dsc80-2025-sp/gh-pages/proj04/index.md) – meta!).
+Now comes the interesting part – actually including content in your site. This [Markdown cheat sheet](https://www.markdownguide.org/cheat-sheet/) contains tips on how to format text and other page components in Markdown (and if you'd benefit by seeing an example, you could always look at the Markdown source of [this very page](https://raw.githubusercontent.com/dsc-courses/dsc80-2026-wi/gh-pages/proj04/index.md) – meta!).
 
 What will be a bit trickier is embedding `plotly` plots in your site so that they are interactive. Note that you are **required** to do this, you cannot simply take screenshots of plots from your notebooks and embed them in your site. Here's how to embed a `plotly` plot directly in your site.
 
 1. First, you'll need to convert your plot to HTML. If `fig` is a `plotly` `Figure` object (for instance, the result of calling `px.express`, `go.Figure`, or `.plot` when `pd.options.plotting.backend = "plotly"` has been run), then the method `fig.write_html` saves the plot as HTML to a file. Call it using `fig.write_html('file-name.html', include_plotlyjs='cdn')`.
    - Change `'file-name.html'` to the path where you'd like to initially save your plot.
    - `include_plotlyjs='cdn'` tells `write_html` to load the source code for the `plotly` library from a server, rather than including the entire source code in your HTML file. This drastically reduces the size of the resulting HTML file, keeping your repo size down.
-1. Move the `.html` file(s) you've created into a folder in your website repo called `assets` (or something similar).
-   - Depending on where your template notebook is saved, you could combine this step with the step above by calling `fig.write_html` with the correct path (e.g. `fig.write_html('../league-match-analysis/assets/matches-per-year.html')).
+1. Move the `.html` file(s) you've created into a folder in your website repo called `assets`.
+   - Depending on where your template notebook is saved, you could combine this step with the step above by calling `fig.write_html` with the correct path (e.g. `fig.write_html("../league-match-analysis/assets/matches-per-year.html")`).
 1. In `README.md`, embed your plot using the following syntax:
 
 ```html
@@ -250,7 +248,7 @@ Refer [here](https://github.com/surajrampure/dsc80-proj3-test1) for a working ex
 {: .note }
 Try your best to make your plots look professional and unique to your group – add axis labels, change the font and colors, add annotations, etc. Remember, potential employers will see this – you don't want your plots to look like everyone else's! If you'd like to match the styles of the `plotly` plots used in lecture (e.g. with the white backgrounds), you can import and use the `dsc80_utils.py` that's in the `proj04` folder of our public repo, alongside `template.ipynb`.
 
-To convert a DataFrame in your notebook to Markdown source code (which you need to do for both the **Data Cleaning** and **Interesting Aggregates** sections of Step 2: Data Cleaning and Exploratory Data Analysis in Part 1), use the `.to_markdown()` method on the DataFrame. For instance,
+To convert a DataFrame in your notebook to Markdown source code (which you need to do in Step 2 of Part 1), use the `.to_markdown()` method on the DataFrame. For instance,
 
 ```py
 print(counts[['Quarter', 'Count']].head().to_markdown(index=False))
@@ -258,7 +256,7 @@ print(counts[['Quarter', 'Count']].head().to_markdown(index=False))
 
 displays a string, containing the Markdown representation of the first 5 rows of `counts`, including only the `'Quarter'` and `'Count'` columns (and not including the index). You can see how this appears [here](http://rampure.org/dsc80-proj3-test1/#assessment-of-missingness); remember, no screenshots. You may need to play with this a little bit so that you don't show DataFrames that are super, super wide and look ugly.
 
-### Local Setup
+### Optional: Local Setup
 
 The above instructions give you all you need to create and make updates to your site. However, you _may_ want to set up Jekyll locally, so that you can look at how changes to your site would look without having to push and wait for GitHub to re-build your site. To do so, follow the steps [here](https://jekyllrb.com/docs/installation/) and then [here](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll).
 
@@ -267,13 +265,11 @@ The above instructions give you all you need to create and make updates to your 
 ## Submission and Rubric
 
 {: .green }
-As mentioned at the top of this page, this project has **two checkpoints**, each worth 1% of your overall grade.
+As mentioned at the top of this page, this project has **two checkpoints**, each worth 1% of your overall grade. Each checkpoint is graded out of 20 points.
 
 ### Checkpoint 1 Submission
 
-The first checkpoint is due on **Friday, May 23rd**. You can submit the checkpoint [here](https://www.gradescope.com/courses/941090/assignments/5820453) on Gradescope.
-
-The checkpoint 1 assignment is worth 20 points, and asks you to answer the following questions:
+The first checkpoint is due on **Friday, February 27th at 11:59PM**. You'll need to complete some steps of Part 1 and answer the following questions directly on Gradescope:
 
 1. (2 points) Which of the three datasets did you choose? Why?
 1. (6 points) Upload a screenshot of a `plotly` visualization you've created while completing Part 1, Step 2: Data Cleaning and Exploratory Data Analysis.
@@ -282,9 +278,7 @@ The checkpoint 1 assignment is worth 20 points, and asks you to answer the follo
 
 ### Checkpoint 2 Submission
 
-The second one is due on **Friday, May 30th**. You can submit the checkpoint [here](https://www.gradescope.com/courses/941090/assignments/5820459) on Gradescope.
-
-The checkpoint 2 assignment is worth 20 points, and asks you to answer the following questions:
+The second one is due on **Friday, March 6th at 11:59PM**. You'll need to complete more of Part 1 and start on Part 2, then answer the following questions directly on Gradescope:
 
 1. (7.5 points) For step 4, what are your null and alternative hypotheses, and what were the result?
 1. (7.5 points) Briefly explain your baseline model and your plans for improving the model.
@@ -293,24 +287,24 @@ The checkpoint 2 assignment is worth 20 points, and asks you to answer the follo
 
 ### Final Submission
 
-You will ultimately submit your project in two ways:
+You will ultimately submit your project in two ways. For both submissions, make sure to tag your partner.
 
-1. By uploading a **PDF version** of your notebook to the specific "Final Project Notebook PDF (Dataset)" assignment on Gradescope **for your dataset**.
+1. Upload a **PDF version** of your notebook to the specific "Final Project Notebook PDF (Dataset)" assignment on Gradescope **for your dataset**.
    - To export your notebook as a PDF, first, restart your kernel and run all cells. Then, go to "File > Print Preview". Then, save a print preview of the webpage as a PDF. There are other ways to save a notebook as a PDF but they may require that you have additional packages installed on your computer, so this is likely the most straightforward.
    - It's fine if your `plotly` graphs don't render in the PDF output of your notebook. However, **make sure none of the code is cut off in your notebook's PDF**. **You will lose 5% of the points available on this project if your code is cut off.**
    - This notebook asks you to include a link to your website; make sure to do so.
-2. By submitting a **link to your website** to the "Final Project Website Link (All Datasets)" assignment on Gradescope.
+2. Submat a **link to your website** to the "Final Project Website Link (All Datasets)" assignment on Gradescope.
 
-To both submissions, make sure to tag your partner. You don't need to submit your actual `.ipynb` file anywhere. **While your website must be public and you should share it with others, you should _not_ make your code for this project available publicly.**
+You don't need to submit your actual `.ipynb` file anywhere. **While your website must be public and you should share it with others, you should _not_ make your code for this project available publicly.**
 
-Since there are two assignments you need to submit on Gradescope, we will treat your submission time as being the **latter** of your two submissions. So, if you submit to the "Final Project Notebook PDF" assignment before the deadline but to the "Final Project Website Link (All Datasets)" website one day late, overall, that counts as late submission.
+We will determine your submission time by the **later** of your two submissions. So, if you submit your PDF before the deadline and your website link one day late, that counts as a late Final Project submission.
 
 {: .warning }
 There are a lot of moving parts to this assignment – don't wait until the last minute to try and submit!
 
 ### Rubric
 
-Your project will be graded out of 200 points. The rough rubric is shown below. If you satisfy these requirements as described above, you will receive full credit.
+Your project will be graded out of 200 points. The rough rubric is shown below. If you satisfy these requirements as described above and perform appropriate analyses, you will receive full credit.
 
 Note that the rubric is intentionally vague when it comes to Steps 5-8. This is because an exact rubric would specify exactly what you need to do to build a model, but figuring out what to do is a large part of Steps 5-8.
 
