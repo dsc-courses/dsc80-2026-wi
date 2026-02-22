@@ -23,11 +23,9 @@ This dataset has major power outage data in the continental U.S. from January 20
 
 ## Getting the Data
 
-The data is downloadable [here](https://engineering.purdue.edu/LASCI/research-data/outages/outagerisks).
+The data is downloadable [here](https://engineering.purdue.edu/LASCI/research-data/outages/outagerisks) from Purdue University's research data. If you are having a hard time with the link on that page, hold shift and click the link to open it into a new tab and then refresh that new tab.
 
-***Note***: If you are having a hard time with the "This dataset" link, hold shift and click the link to open it into a new tab and then refresh that new tab.
-
-A data dictionary is available at this [article](https://www.sciencedirect.com/science/article/pii/S2352340918307182) under *Table 1. Variable descriptions*.
+A data dictionary is available in this [article](https://www.sciencedirect.com/science/article/pii/S2352340918307182) under *Table 1. Variable descriptions*.
 
 ---
 
@@ -44,7 +42,7 @@ Feel free to use one of the prompts below to build your predictive model in Step
 
 * Predict the severity (in terms of number of customers, duration, or demand loss) of a major power outage.
 * Predict the cause of a major power outage.
-* Predict the number and/or severity of major power outages in the year 2022.
+* Predict the number and/or severity of major power outages in a given year.
 * Predict the electricity consumption of an area.
 
 Make sure to justify what information you would know at the “time of prediction” and to only train your model using those features.
