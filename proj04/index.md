@@ -52,7 +52,7 @@ In this project, you will perform an open-ended investigation into a **single da
 
 The dataset description pages linked above each have three sections:
 - **Getting the Data**: Describes how to access the data and, in some cases, what various features mean. (In general, you're going to have to understand what your data means on your own!)
-- **Example Questions and Prediction Problems**: Example questions to explore in Part 1: Steps 1-4, and example prediction problems to build models for in Part 1: Steps 5-8. Use these as inspiration, but come up with your own questions and prediction problems!
+- **Example Questions and Prediction Problems**: Example questions to explore in Part 1: Steps 1-4, and example prediction problems to build models for in Part 1: Steps 5-8. You may use the provided examples, but we recommend coming up with your own questions and prediction problems!
 - **Special Considerations**: Things to be aware of when working with the given dataset, e.g. some additional requirements.
 
 When selecting which dataset you are going to use for your project, try choosing the one whose topic appeals to you the most as that will make finishing the project a lot more enjoyable.
