@@ -272,15 +272,15 @@ As mentioned at the top of this page, this project has **two checkpoints**, each
 The first checkpoint is due on **Friday, February 27th at 11:59PM**. You'll need to complete some steps of Part 1 and answer the following questions directly on Gradescope:
 
 1. (2 points) Which of the three datasets did you choose? Why?
-1. (6 points) Upload a screenshot of a `plotly` visualization you've created while completing Part 1, Step 2: Data Cleaning and Exploratory Data Analysis.
-1. (6 points) What is the pair of hypotheses you plan on testing in Part 1, Step 4? What is the test statistic you plan on using?
-1. (6 points) What is the column you plan on trying to predict in Part 1, Steps 5-8? Is it a classification or regression problem?
+1. (6 points) Upload a screenshot of a `plotly` visualization you created in Step 2.
+1. (6 points) What is the pair of hypotheses you plan on testing in Step 4? What is the test statistic you plan on using?
+1. (6 points) What is the column you plan on trying to predict in Steps 5-8? Is it a classification or regression problem?
 
 ### Checkpoint 2 Submission
 
 The second one is due on **Friday, March 6th at 11:59PM**. You'll need to complete more of Part 1 and start on Part 2, then answer the following questions directly on Gradescope:
 
-1. (7.5 points) For step 4, what are your null and alternative hypotheses, and what was the result of your test?
+1. (7.5 points) For Step 4, what are your null and alternative hypotheses, and what was the result of your test?
 1. (7.5 points) Briefly explain your baseline model and your plans for improving the model.
 1. (5 points) Submit a working GitHub page webpage URL for the project. On the webpage, you need to at least include a project title.
 
