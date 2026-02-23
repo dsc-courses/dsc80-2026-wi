@@ -8,7 +8,7 @@ nav_order: 7
 
 <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
-# 📊 Final Project: The Data Science Lifecycle 
+# Final Project: The Data Science Lifecycle 🔁
 {:.no_toc}
 ### Checkpoint 1 (1%) Due: Friday, February 27th at 11:59PM 
 {:.no_toc}

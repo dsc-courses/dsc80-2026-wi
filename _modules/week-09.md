@@ -30,7 +30,7 @@ days:
   events:
   - name: PROJ 4
     type: proj
-    title: Project 4 Checkpoint 2
+    title: Checkpoint 2 - Data Science Lifecycle 🔁
     url: https://dsc80.com/proj04/
     reading: ''
 ---

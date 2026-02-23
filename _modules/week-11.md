@@ -12,7 +12,7 @@ days:
   events:
   - name: PROJ 4
     type: proj
-    title: Project 4
+    title: Data Science Lifecycle 🔁
     url: https://dsc80.com/proj04/
     reading: ''
 ---
