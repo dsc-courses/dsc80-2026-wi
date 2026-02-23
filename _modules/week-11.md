@@ -13,5 +13,6 @@ days:
   - name: PROJ 4
     type: proj
     title: Project 4
+    url: https://dsc80.com/proj04/
     reading: ''
 ---
