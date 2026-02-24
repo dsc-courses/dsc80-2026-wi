@@ -15,6 +15,7 @@ days:
     type: lecture
     title: Feature Engineering
     reading: '[Ch. 15.7-15.9](https://learningds.org/ch/15/linear_feature_eng.html)'
+    html: resources/lectures/lec14/lec14.html
 - date: '2026-02-25'
   events:
   - name: DISC 8
