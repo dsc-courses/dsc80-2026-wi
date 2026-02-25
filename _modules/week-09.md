@@ -7,6 +7,7 @@ days:
   - name: LAB 8
     type: lab
     title: Feature Engineering
+    url: https://github.com/dsc-courses/dsc80-2026-wi/blob/main/labs/lab08/lab.ipynb
     reading: '[Ch. 15.7-15.9](https://learningds.org/ch/15/linear_feature_eng.html)'
 - date: '2026-03-03'
   events:
