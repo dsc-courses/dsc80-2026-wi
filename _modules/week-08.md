@@ -29,6 +29,7 @@ days:
     type: lecture
     title: Pipelines, Multicollinearity, and Generalization
     reading: '[Ch. 16](https://learningds.org/ch/16/ms_train_test.html), [17.6](https://learningds.org/ch/17/inf_pred_gen_prob.html)'
+    html: resources/lectures/lec15/lec15.html
 - date: '2026-02-27'
   events:
   - name: PROJ 4
