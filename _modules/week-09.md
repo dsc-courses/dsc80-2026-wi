@@ -15,6 +15,7 @@ days:
     type: lecture
     title: Hyperparameters, Cross-Validation, and Decision Trees
     reading: '[Ch. 16](https://learningds.org/ch/16/ms_intro.html)'
+    html: resources/lectures/lec16/lec16.html
 - date: '2026-03-04'
   events:
   - name: DISC 9
