@@ -7,6 +7,7 @@ days:
   - name: LAB 9
     type: lab
     title: Models and Pipelines
+    url: https://github.com/dsc-courses/dsc80-2026-wi/blob/main/labs/lab09/lab.ipynb
     reading: ''
 - date: '2026-03-10'
   events:
