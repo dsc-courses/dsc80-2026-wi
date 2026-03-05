@@ -28,6 +28,7 @@ days:
     type: lecture
     title: Decision Trees and Random Forests
     reading: '[A1](resources/other/15097-decision-trees.pdf)'
+    html: resources/lectures/lec17/lec17.html
 - date: '2026-03-06'
   events:
   - name: PROJ 4
