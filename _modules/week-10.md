@@ -15,6 +15,7 @@ days:
     type: lecture
     title: Classifier Evaluation and Model Fairness
     reading: '[Ch. 16](https://learningds.org/ch/16/ms_intro.html)'
+    html: resources/lectures/lec18/lec18.html
 - date: '2026-03-11'
   events:
   - name: DISC 10
